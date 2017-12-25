@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:ct-socle="http://argos.ccomptes.fr/schema/ct-socle"
+	xmlns:ct-commun="http://argos.ccomptes.fr/schema/ct-commun" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="ldapDomaine"
+		class="fr.anses.ct.ldap.domaine.impl.LdapDomaineImpl">
+		<property name="ldapPersistance" ref="ldapPersistance"></property>
+	</bean>
+</beans>
